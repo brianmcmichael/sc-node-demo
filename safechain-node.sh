@@ -49,5 +49,3 @@ echo "All systems go for launch"
 echo "Launching geth console on SafeChain Network"
 sleep 2
 $GETH_PATH --datadir $DATA_PATH --networkid 180918 --port 33444 console
-$(eval $LAUNCH_GETH)
-echo "Launch the geth console again with this command:\n$LAUNCH_GETH"
