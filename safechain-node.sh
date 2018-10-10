@@ -5,7 +5,7 @@ ROOT_PATH=$(pwd)
 DATA_PATH="$ROOT_PATH/data"
 GETH_IPC="$DATA_PATH/geth.ipc"
 
-if [ ! -f $GETH_PATH ]; then
+if [ ! -f $GETH_PATH ] || [ -z $GETH_PATH  ] ; then
   echo "Please install Geth.\nLearn more at: https://github.com/ethereum/go-ethereum/wiki/Installing-Geth"
   exit 1
 fi
